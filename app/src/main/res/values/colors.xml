@@ -6,4 +6,5 @@
     <color name="colorPrimaryLighter">#A5E6DC</color>
     <color name="colorBackground">#EEEEEE</color>
     <color name="colorTextPrimary">#505050</color>
+    <color name="colorLine">#DCDCDC</color>
 </resources>

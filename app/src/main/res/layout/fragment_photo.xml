@@ -15,16 +15,39 @@
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:text="写真集"
-        android:textColor="@android:color/white" />
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/im_photo_rocket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_publish_photo"
+        android:layout_alignTop="@+id/btn_publish_photo"
+        android:layout_marginLeft="124dp"
+        android:src="@mipmap/icon_button_photo_rocket"
+        android:translationZ="13dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_publish_photo"
+        android:layout_marginTop="13dp"
+        android:layout_toEndOf="@+id/im_photo_rocket"
+        android:text="发布写真"
+        android:textColor="@color/colorTextPrimary"
+        android:translationZ="13dp" />
 
     <Button
+        android:id="@+id/btn_publish_photo"
         android:layout_width="355dp"
         android:layout_height="44dp"
         android:layout_below="@+id/nav_bar_photo"
-        android:layout_margin="10dp"
-        android:background="@drawable/button_publish_photo"
-        android:text="发布写真"
-        android:textColor="@color/colorTextPrimary" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_publish_photo" />
 
 
 </RelativeLayout>
