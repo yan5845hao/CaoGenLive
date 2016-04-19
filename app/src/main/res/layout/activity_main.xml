@@ -34,7 +34,7 @@
             android:text="@string/list" />
 
         <Button
-            android:id="@+id/rb_live"
+            android:id="@+id/btn_start_live"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
