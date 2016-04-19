@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">草根直播</string>
+
+    <!--底栏名称-->
+    <string name="announcement">公告</string>
+    <string name="list">列表</string>
+    <string name="live">直播</string>
+    <string name="photo">写真</string>
+    <string name="my">我的</string>
+
+    <!--列表页顶栏名称-->
+    <string name="focus">关注</string>
+    <string name="hot">热门</string>
+    <string name="recent">最新</string>
+
+    <!--公告页名称-->
+    <string name="angel_reward_plan">天使奖励计划</string>
+    <string name="live_convention">直播公约</string>
+    <string name="official_notification">官方通知</string>
 </resources>
