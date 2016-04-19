@@ -1,35 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <include layout="@layout/nav_bar_layout" />
 
     <RadioGroup
         android:id="@+id/rg_list"
-        android:layout_width="match_parent"
+        android:layout_width="160dp"
         android:layout_height="49dp"
+        android:layout_centerHorizontal="true"
         android:orientation="horizontal"
         android:weightSum="3">
 
         <RadioButton
             android:id="@+id/rb_focus"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="7dp"
             android:layout_weight="1"
-            android:text="关注" />
+            android:button="@null"
+            android:drawableBottom="@drawable/radio_button_inner_selector"
+            android:gravity="center"
+            android:text="关注"
+            android:textColor="@android:color/white" />
 
         <RadioButton
             android:id="@+id/rb_hot"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="7dp"
             android:layout_weight="1"
-            android:text="热门" />
+            android:button="@null"
+            android:drawableBottom="@drawable/radio_button_inner_selector"
+            android:gravity="center"
+            android:text="热门"
+            android:textColor="@android:color/white" />
 
         <RadioButton
             android:id="@+id/rb_new"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="7dp"
             android:layout_weight="1"
-            android:text="最新" />
+            android:button="@null"
+            android:drawableBottom="@drawable/radio_button_inner_selector"
+            android:gravity="center"
+            android:text="最新"
+            android:textColor="@android:color/white" />
     </RadioGroup>
 
     <android.support.v4.view.ViewPager
