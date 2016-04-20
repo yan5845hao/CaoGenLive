@@ -44,6 +44,21 @@ public class SaveUserInfoActivity extends AppCompatActivity implements View.OnCl
 
         initView();
         setListeners();
+        setTitle();
+    }
+
+    /**
+     * 根据不同的Intent修改Activity的title
+     */
+    private void setTitle() {
+        Intent titleIntent = getIntent();
+        String title = titleIntent.getStringExtra(Configs.EDIT_USER_INFO_TITLE);
+        //如果title为空
+        if (title != null) {
+            tv_save_user_title.setText(title);
+        } else {
+            tv_save_user_title.setText("更改信息");
+        }
     }
 
     /**
@@ -69,14 +84,6 @@ public class SaveUserInfoActivity extends AppCompatActivity implements View.OnCl
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.tv_save_user_title:
-                Intent titleIntent = getIntent();
-                String title = titleIntent.getStringExtra(Configs.EDIT_USER_INFO_TITLE);
-                //如果title为空
-                if (title != null) {
-                    tv_save_user_title.setText(title);
-                } else {
-                    tv_save_user_title.setText("更改信息");
-                }
                 break;
             case R.id.tv_save_user_cancel:
                 finish();
