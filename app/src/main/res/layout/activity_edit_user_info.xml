@@ -221,7 +221,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginLeft="20dp"
-            android:text="实名认证"
+            android:text="手机号"
             android:textColor="@color/colorTextPrimary"
             android:textSize="15sp" />
 
@@ -261,7 +261,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginLeft="20dp"
-            android:text="手机号"
+            android:text="实名认证"
             android:textColor="@color/colorTextPrimary"
             android:textSize="15sp" />
 

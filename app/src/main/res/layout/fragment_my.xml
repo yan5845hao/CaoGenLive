@@ -238,6 +238,14 @@
 
         </RelativeLayout>
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/rl_my_angel_reward_plan"
+        android:layout_centerVertical="true"
+        android:background="@color/colorLine"
+        android:orientation="horizontal" />
     <!--天使奖励计划按钮-->
     <RelativeLayout
         android:id="@+id/rl_my_angel_reward_plan"
@@ -246,6 +254,14 @@
         android:layout_below="@+id/ll_user_info"
         android:layout_marginTop="10dp"
         android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:background="@color/colorLine"
+            android:orientation="horizontal" />
 
         <ImageView
             android:layout_width="44dp"
@@ -269,6 +285,14 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:src="@mipmap/nav_icon_arrow_default" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:background="@color/colorLine"
+            android:orientation="horizontal" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -279,6 +303,15 @@
         android:layout_marginTop="10dp"
         android:background="@android:color/white">
         <!--收入记录按钮-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:background="@color/colorLine"
+            android:orientation="horizontal" />
+
         <ImageView
             android:layout_width="44dp"
             android:layout_height="44dp"
@@ -331,6 +364,14 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:src="@mipmap/nav_icon_arrow_default" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:background="@color/colorLine"
+            android:orientation="horizontal" />
     </RelativeLayout>
     <!--黑名单按钮-->
     <RelativeLayout
@@ -340,6 +381,14 @@
         android:layout_below="@+id/rl_my_seed"
         android:layout_marginTop="10dp"
         android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:background="@color/colorLine"
+            android:orientation="horizontal" />
 
         <ImageView
             android:layout_width="44dp"
@@ -361,6 +410,14 @@
             android:layout_height="44dp"
             android:layout_alignParentRight="true"
             android:src="@mipmap/nav_icon_arrow_default" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:background="@color/colorLine"
+            android:orientation="horizontal" />
     </RelativeLayout>
 
 

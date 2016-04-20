@@ -21,7 +21,8 @@
         android:id="@+id/rl_notice"
         android:layout_width="match_parent"
         android:layout_height="165dp"
-        android:layout_below="@+id/nav_bar_announcement">
+        android:layout_below="@+id/nav_bar_announcement"
+        android:background="#2C363A">
 
         <TextView
             android:id="@+id/tv_announcement_notice_title"
@@ -32,7 +33,7 @@
             android:paddingTop="24dp"
             android:singleLine="true"
             android:text="@string/announcement_top_notice_title"
-            android:textColor="@color/colorTextPrimary"
+            android:textColor="#E17850"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -40,7 +41,7 @@
             android:id="@+id/tv_announcement_notice_content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/ll_announcement_line_top"
+            android:layout_alignParentBottom="true"
             android:layout_below="@+id/tv_announcement_notice_title"
             android:lineSpacingExtra="6sp"
             android:maxLines="4"
@@ -49,18 +50,8 @@
             android:paddingRight="30dp"
             android:paddingTop="4dp"
             android:text="@string/announcement_top_notice_content"
-            android:textColor="@color/colorTextPrimary"
+            android:textColor="#848E92"
             android:textSize="14sp" />
-
-
-        <LinearLayout
-            android:id="@+id/ll_announcement_line_top"
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true"
-            android:background="@color/colorLine"
-            android:orientation="horizontal" />
     </RelativeLayout>
 
     <RadioGroup
