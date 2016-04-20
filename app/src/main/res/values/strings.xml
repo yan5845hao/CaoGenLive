@@ -22,5 +22,6 @@
     <string name="info_user_to_authentication">为保证平台的安全性和主播的真实性，开启直播需要进行实名认证</string>
 
     <!--公告界面最上方的提示文字，在后台可以修改-->
-    <string name="announcement_top_notice_title">关于提现的通知</string>
+    <string name="announcement_top_notice_title">关于提现的通知：</string>
+    <string name="announcement_top_notice_content">此处显示直播公约，允许管理员在后台修改，用户只能观看，不能对内容进行操作</string>
 </resources>
