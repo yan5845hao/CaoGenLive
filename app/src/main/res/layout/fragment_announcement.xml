@@ -110,7 +110,7 @@
             android:button="@null"
             android:drawableTop="@mipmap/nav_icon_system_informs_default"
             android:gravity="center"
-            android:text="@string/angel_reward_plan"
+            android:text="@string/official_notification"
             android:textColor="@color/colorTextPrimary" />
     </RadioGroup>
 
