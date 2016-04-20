@@ -3,7 +3,9 @@ package com.ylsna.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
 import android.text.TextUtils;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -11,7 +13,7 @@ import android.widget.TextView;
 import com.ylsna.Configs;
 import com.ylsna.R;
 
-public class SaveUserInfoActivity extends AppCompatActivity implements View.OnClickListener {
+public class SaveUserInfoActivity extends AppCompatActivity implements View.OnClickListener, TextWatcher {
     /**
      * 这个Act的title名字，比如更改名字/更改房间号/更改个人简介
      */
@@ -68,6 +70,7 @@ public class SaveUserInfoActivity extends AppCompatActivity implements View.OnCl
         tv_save_user_title.setOnClickListener(this);
         tv_save_user_cancel.setOnClickListener(this);
         tv_save_user_save.setOnClickListener(this);
+        et_save_user_info.addTextChangedListener(this);
     }
 
     /**
@@ -92,17 +95,42 @@ public class SaveUserInfoActivity extends AppCompatActivity implements View.OnCl
                 userInfo = et_save_user_info.getText().toString().trim();
                 //判断如果EditText为空，则不能点击
                 if (TextUtils.isEmpty(userInfo)) {
-                    tv_save_user_save.setEnabled(false);
+
                 } else {
-                    tv_save_user_save.setEnabled(true);
                     // TODO: 16-4-20  如果不为空，就发送网络请求修改
 
                     // 返回给前一个Activity
                     Intent contentIntent = new Intent(this, EditUserInfoActivity.class);
                     contentIntent.putExtra(Configs.CONFIRM_USER_INFO_BACK, userInfo);
-                    startActivity(contentIntent);
+                    //startActivity(contentIntent);
+                    finish();
                 }
                 break;
         }
+    }
+
+    /**
+     * 监听EditText是否输入
+     *
+     * @param s
+     * @param start
+     * @param count
+     * @param after
+     */
+    @Override
+    public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+    }
+
+    @Override
+    public void onTextChanged(CharSequence s, int start, int before, int count) {
+        if (!TextUtils.isEmpty(et_save_user_info.getText().toString().trim())) {
+            tv_save_user_save.setVisibility(View.VISIBLE);
+        } else {
+            tv_save_user_save.setVisibility(View.GONE);
+        }
+    }
+
+    @Override
+    public void afterTextChanged(Editable s) {
     }
 }

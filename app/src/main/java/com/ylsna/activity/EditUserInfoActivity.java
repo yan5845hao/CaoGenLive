@@ -71,17 +71,17 @@ public class EditUserInfoActivity extends AppCompatActivity implements View.OnCl
             case R.id.rl_edit_user_info_name:
                 title = "更改名字";
                 titleIntent.putExtra(Configs.EDIT_USER_INFO_TITLE, title);
-                startActivity(titleIntent);
+                startActivityForResult(titleIntent, 0);
                 break;
             case R.id.rl_edit_user_info_room:
                 title = "更改房间号";
                 titleIntent.putExtra(Configs.EDIT_USER_INFO_TITLE, title);
-                startActivity(titleIntent);
+                startActivityForResult(titleIntent, 0);
                 break;
             case R.id.rl_edit_user_info_introduce:
                 title = "更改个人简介";
                 titleIntent.putExtra(Configs.EDIT_USER_INFO_TITLE, title);
-                startActivity(titleIntent);
+                startActivityForResult(titleIntent, 0);
                 break;
         }
     }
