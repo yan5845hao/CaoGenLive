@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_item_title_announcement_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxEms="12"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="25dp"
+        android:singleLine="true"
+        android:text="系统通知主题:"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_item_date_announcement_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_item_title_announcement_notice"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="30dp"
+        android:paddingRight="14dp"
+        android:paddingTop="25dp"
+        android:singleLine="true"
+        android:text="2016/06/20"
+        android:textColor="@color/colorTextLighter"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_item_content_announcement_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item_title_announcement_notice"
+        android:ellipsize="end"
+        android:maxEms="18"
+        android:paddingBottom="25dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="14dp"
+        android:singleLine="true"
+        android:text="此处显示系统通知限制18字，多余部分则隐去"
+        android:textColor="@color/colorTextLighter" />
+
+
+</RelativeLayout>
