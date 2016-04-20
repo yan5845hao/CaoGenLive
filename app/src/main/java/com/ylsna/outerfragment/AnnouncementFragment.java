@@ -7,6 +7,7 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
@@ -35,6 +36,12 @@ public class AnnouncementFragment extends Fragment {
     private RadioButton rb_anno_angel;
     private RadioButton rb_anno_convention;
     private RadioButton rb_anno_notice;
+    /**
+     * RadioButton被选中的下方横条的显示和隐藏
+     */
+    private ImageView im_announcement_rb_checked_1;
+    private ImageView im_announcement_rb_checked_2;
+    private ImageView im_announcement_rb_checked_3;
 
     /**
      * 装fragment，3个
@@ -70,6 +77,10 @@ public class AnnouncementFragment extends Fragment {
         rb_anno_convention = (RadioButton) view.findViewById(R.id.rb_anno_convention);
         rb_anno_notice = (RadioButton) view.findViewById(R.id.rb_anno_notice);
 
+        im_announcement_rb_checked_1 = (ImageView) view.findViewById(R.id.im_announcement_rb_checked_1);
+        im_announcement_rb_checked_2 = (ImageView) view.findViewById(R.id.im_announcement_rb_checked_2);
+        im_announcement_rb_checked_3 = (ImageView) view.findViewById(R.id.im_announcement_rb_checked_3);
+
         mRewardFragment = new RewardFragment();
         mLiveConventionFragment = new LiveConventionFragment();
         mNoticeFragment = new NoticeFragment();
@@ -96,13 +107,13 @@ public class AnnouncementFragment extends Fragment {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 switch (checkedId) {
-                    case R.id.rb_focus:
+                    case R.id.rb_anno_angel:
                         mVpAnnouncement.setCurrentItem(0);
                         break;
-                    case R.id.rb_hot:
+                    case R.id.rb_anno_convention:
                         mVpAnnouncement.setCurrentItem(1);
                         break;
-                    case R.id.rb_new:
+                    case R.id.rb_anno_notice:
                         mVpAnnouncement.setCurrentItem(2);
                         break;
                 }
@@ -120,12 +131,16 @@ public class AnnouncementFragment extends Fragment {
                 switch (position) {
                     case 0:
                         rb_anno_angel.setChecked(true);
+                        rbCheckedLineMode();
                         break;
                     case 1:
                         rb_anno_convention.setChecked(true);
+                        rbCheckedLineMode();
+
                         break;
                     case 2:
                         rb_anno_notice.setChecked(true);
+                        rbCheckedLineMode();
                         break;
                 }
             }
@@ -135,5 +150,25 @@ public class AnnouncementFragment extends Fragment {
 
             }
         });
+    }
+
+    /**
+     * 判断什么时候该隐藏RadioButton下方的横条
+     */
+    public void rbCheckedLineMode() {
+        if (rb_anno_angel.isChecked()) {
+            im_announcement_rb_checked_1.setVisibility(View.VISIBLE);
+            im_announcement_rb_checked_2.setVisibility(View.GONE);
+            im_announcement_rb_checked_3.setVisibility(View.GONE);
+        } else if (rb_anno_convention.isChecked()) {
+            im_announcement_rb_checked_1.setVisibility(View.GONE);
+            im_announcement_rb_checked_2.setVisibility(View.VISIBLE);
+            im_announcement_rb_checked_3.setVisibility(View.GONE);
+        } else if (rb_anno_notice.isChecked()) {
+            im_announcement_rb_checked_1.setVisibility(View.GONE);
+            im_announcement_rb_checked_2.setVisibility(View.GONE);
+            im_announcement_rb_checked_3.setVisibility(View.VISIBLE);
+        }
+
     }
 }

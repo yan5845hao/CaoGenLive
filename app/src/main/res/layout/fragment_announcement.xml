@@ -27,12 +27,19 @@
             android:id="@+id/tv_announcement_notice"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorLine" />
     </RelativeLayout>
 
     <RadioGroup
         android:id="@+id/rg_announcement"
         android:layout_width="match_parent"
-        android:layout_height="65dp"
+        android:layout_height="80dp"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/rl_notice"
         android:background="@android:color/white"
@@ -43,26 +50,79 @@
             android:id="@+id/rb_anno_angel"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/nav_icon_angel_rewards_program_default"
+            android:gravity="center"
+            android:text="@string/angel_reward_plan"
+            android:textColor="@color/colorTextPrimary" />
 
         <RadioButton
             android:id="@+id/rb_anno_convention"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/nav_icon_live_convention_default"
+            android:gravity="center"
+            android:text="@string/live_convention"
+            android:textColor="@color/colorTextPrimary" />
 
         <RadioButton
             android:id="@+id/rb_anno_notice"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/nav_icon_system_informs_default"
+            android:gravity="center"
+            android:text="@string/angel_reward_plan"
+            android:textColor="@color/colorTextPrimary" />
     </RadioGroup>
+
+    <ImageView
+        android:id="@+id/im_announcement_rb_checked_1"
+        android:layout_width="90dp"
+        android:layout_height="2dp"
+        android:layout_above="@+id/ll_announcement_line_bottom"
+        android:layout_marginLeft="15dp"
+        android:src="@mipmap/tag_box_announcement_default"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/im_announcement_rb_checked_2"
+        android:layout_width="90dp"
+        android:layout_height="2dp"
+        android:layout_above="@+id/ll_announcement_line_bottom"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/tag_box_announcement_default"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/im_announcement_rb_checked_3"
+        android:layout_width="90dp"
+        android:layout_height="2dp"
+        android:layout_above="@+id/ll_announcement_line_bottom"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"
+        android:src="@mipmap/tag_box_announcement_default"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_announcement_line_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rg_announcement"
+        android:background="@color/colorLine"
+        android:orientation="horizontal" />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/vp_announcement"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/rg_announcement"></android.support.v4.view.ViewPager>
+        android:layout_below="@+id/rg_announcement" />
 
 
 </RelativeLayout>

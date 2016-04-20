@@ -8,4 +8,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--如果是未认证用户则提示其进行认证的AlertDialog样式-->
+    <style name="InfoUserToAuthenticAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- 按钮的颜色 -->
+        <item name="colorAccent">@android:color/holo_blue_dark</item>
+        <!-- 文字的颜色 -->
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+    </style>
+
 </resources>
