@@ -37,7 +37,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.EditUserInfoActivity"></activity>
+        <activity android:name=".activity.EditUserInfoActivity" />
+        <activity android:name=".activity.SaveUserInfoActivity"></activity>
     </application>
 
 </manifest>
