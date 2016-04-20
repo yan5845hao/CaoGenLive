@@ -155,7 +155,7 @@
         android:id="@+id/vp_announcement"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/rg_announcement" />
+        android:layout_below="@+id/ll_announcement_line_bottom" />
 
 
 </RelativeLayout>
