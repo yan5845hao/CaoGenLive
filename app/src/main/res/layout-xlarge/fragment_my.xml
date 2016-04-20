@@ -10,14 +10,14 @@
         android:layout_width="match_parent"
         android:layout_height="204dp"
         android:background="@color/colorPrimary">
-        <!--编辑用户信息按钮-->
+
         <ImageButton
             android:id="@+id/btn_toolbar_chat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="4dp"
             android:background="@mipmap/nav_button_edit_default" />
-        <!--分享按钮-->
+
         <ImageButton
             android:id="@+id/btn_toolbar_search"
             android:layout_width="wrap_content"
@@ -53,7 +53,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="28dp"
             android:src="@mipmap/nav_icon_bg_default" />
-        <!--用户头像-->
+
         <com.ylsna.view.CircleImageView
             android:id="@+id/im_my_user_head"
             android:layout_width="60dp"
@@ -61,7 +61,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="48dp"
             android:src="@mipmap/head" />
-        <!--用户昵称-->
+
         <TextView
             android:id="@+id/tv_my_user_name"
             android:layout_width="wrap_content"
@@ -74,7 +74,7 @@
             android:textColor="@android:color/white"
             android:textSize="15sp"
             android:textStyle="bold" />
-        <!--房间号-->
+
         <TextView
             android:id="@+id/tv_my_room_name"
             android:layout_width="wrap_content"
@@ -85,7 +85,7 @@
             android:text="房间号：五位（数字/字母组合）"
             android:textColor="@android:color/white"
             android:textSize="10sp" />
-        <!--个人简介-->
+
         <TextView
             android:id="@+id/tv_my_introduce"
             android:layout_width="wrap_content"
@@ -115,7 +115,7 @@
             android:layout_below="@+id/rl_my_title"
             android:layout_weight="1"
             android:background="@android:color/white">
-            <!--关注主播的数量-->
+
             <TextView
                 android:id="@+id/tv_my_focus_num"
                 android:layout_width="wrap_content"
@@ -156,7 +156,7 @@
             android:layout_below="@+id/rl_my_title"
             android:layout_weight="1"
             android:background="@android:color/white">
-            <!--粉丝的数量-->
+
             <TextView
                 android:id="@+id/tv_my_fans_num"
                 android:layout_width="wrap_content"
@@ -209,7 +209,7 @@
                 android:textColor="@color/colorTextPrimary"
                 android:textSize="20sp"
                 android:textStyle="bold" />
-            <!--直播时长-->
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -232,7 +232,7 @@
 
         </RelativeLayout>
     </LinearLayout>
-    <!--天使奖励计划按钮-->
+
     <RelativeLayout
         android:id="@+id/rl_my_angel_reward_plan"
         android:layout_width="match_parent"
@@ -272,7 +272,7 @@
         android:layout_below="@+id/rl_my_angel_reward_plan"
         android:layout_marginTop="10dp"
         android:background="@android:color/white">
-        <!--收入记录按钮-->
+
         <ImageView
             android:layout_width="44dp"
             android:layout_height="44dp"
@@ -308,7 +308,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginLeft="10dp"
             android:src="@mipmap/nav_icon_seeds_default" />
-        <!--培育种子按钮-->
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -326,7 +326,7 @@
             android:layout_alignParentRight="true"
             android:src="@mipmap/nav_icon_arrow_default" />
     </RelativeLayout>
-    <!--黑名单按钮-->
+
     <RelativeLayout
         android:id="@+id/rl_my_black_list"
         android:layout_width="match_parent"

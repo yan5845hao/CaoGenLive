@@ -39,20 +39,29 @@
         android:weightSum="3">
 
         <RadioButton
+            android:id="@+id/rb_anno_angel"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1" />
 
         <RadioButton
+            android:id="@+id/rb_anno_convention"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1" />
 
         <RadioButton
+            android:id="@+id/rb_anno_notice"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1" />
     </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_announcement"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rg_announcement"></android.support.v4.view.ViewPager>
 
 
 </RelativeLayout>
