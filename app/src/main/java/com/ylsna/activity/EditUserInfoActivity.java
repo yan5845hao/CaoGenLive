@@ -10,6 +10,10 @@ public class EditUserInfoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit);
+        setContentView(R.layout.activity_edit_user_info);
+        if (getSupportActionBar() != null) {
+            //隐藏ActionBar
+            getSupportActionBar().hide();
+        }
     }
 }
