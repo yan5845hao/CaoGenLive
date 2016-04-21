@@ -118,6 +118,12 @@
             android:layout_below="@+id/rl_my_title"
             android:layout_weight="1"
             android:background="@android:color/white">
+
+            <ImageButton
+                android:id="@+id/btn_my_focus_num"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rl_press_selector" />
             <!--关注主播的数量-->
             <TextView
                 android:id="@+id/tv_my_focus_num"
@@ -160,6 +166,12 @@
             android:layout_below="@+id/rl_my_title"
             android:layout_weight="1"
             android:background="@android:color/white">
+
+            <ImageButton
+                android:id="@+id/btn_my_fans_num"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rl_press_selector" />
             <!--粉丝的数量-->
             <TextView
                 android:id="@+id/tv_my_fans_num"
@@ -253,7 +265,13 @@
         android:layout_height="44dp"
         android:layout_below="@+id/ll_user_info"
         android:layout_marginTop="10dp"
-        android:background="@android:color/white">
+        android:background="@drawable/rl_press_selector">
+
+        <ImageButton
+            android:id="@+id/btn_my_angel_reward_plan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rl_press_selector" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -278,7 +296,6 @@
             android:textColor="@color/colorTextPrimary"
             android:textSize="15sp" />
 
-
         <ImageView
             android:layout_width="44dp"
             android:layout_height="44dp"
@@ -302,6 +319,19 @@
         android:layout_below="@+id/rl_my_angel_reward_plan"
         android:layout_marginTop="10dp"
         android:background="@android:color/white">
+
+        <ImageButton
+            android:id="@+id/btn_my_income_record"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/rl_press_selector" />
+
+        <ImageButton
+            android:id="@+id/btn_my_seed"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/btn_my_income_record"
+            android:background="@drawable/rl_press_selector" />
         <!--收入记录按钮-->
 
         <LinearLayout
@@ -381,6 +411,12 @@
         android:layout_below="@+id/rl_my_seed"
         android:layout_marginTop="10dp"
         android:background="@android:color/white">
+
+        <ImageButton
+            android:id="@+id/btn_my_black_list"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/rl_press_selector" />
 
         <LinearLayout
             android:layout_width="match_parent"

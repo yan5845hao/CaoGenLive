@@ -1,5 +1,6 @@
 package com.ylsna.outerfragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -7,10 +8,12 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import com.ylsna.R;
+import com.ylsna.activity.SupportRankListActivity;
 import com.ylsna.adapter.InnerFragmentViewPagerAdapter;
 import com.ylsna.innerfragment.FocusFragment;
 import com.ylsna.innerfragment.HotFragment;
@@ -44,15 +47,46 @@ public class ListFragment extends Fragment {
     private RadioButton rb_focus;
     private RadioButton rb_hot;
     private RadioButton rb_new;
+    /**
+     * 点击赞助榜和收入榜的按钮
+     */
+    private Button btn_support_rank_list;
+    private Button btn_income_rank_list;
+
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_list, container, false);
         initViewPager(view);
+        initView(view);
         init_event();
 
         return view;
+    }
+
+    /**
+     * 初始化控件
+     *
+     * @param view
+     */
+    private void initView(View view) {
+        btn_support_rank_list = (Button) view.findViewById(R.id.btn_support_rank_list);
+        btn_income_rank_list = (Button) view.findViewById(R.id.btn_income_rank_list);
+        //进入赞助榜单
+        btn_support_rank_list.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), SupportRankListActivity.class));
+            }
+        });
+        //进入收入榜
+        btn_income_rank_list.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 
     /**
