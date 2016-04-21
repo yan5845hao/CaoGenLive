@@ -41,6 +41,11 @@
         android:layout_marginTop="10dp"
         android:background="@android:color/white">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rl_press_selector" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -81,6 +86,11 @@
         android:layout_height="44dp"
         android:layout_below="@+id/rl_edit_user_info_head"
         android:background="@android:color/white">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rl_press_selector" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -128,6 +138,11 @@
         android:layout_below="@+id/rl_edit_user_info_name"
         android:background="@android:color/white">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rl_press_selector" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -173,6 +188,11 @@
         android:layout_height="44dp"
         android:layout_below="@+id/rl_edit_user_info_room"
         android:background="@android:color/white">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rl_press_selector" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -222,6 +242,7 @@
         android:layout_below="@+id/rl_edit_user_info_introduce"
         android:background="@android:color/white">
 
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -261,6 +282,11 @@
         android:layout_below="@+id/rl_edit_user_info_phone"
         android:layout_marginTop="10dp"
         android:background="@android:color/white">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rl_press_selector" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -308,6 +334,11 @@
         android:layout_below="@+id/rl_edit_user_info_certification"
         android:layout_marginTop="10dp"
         android:background="@android:color/white">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rl_press_selector" />
 
         <TextView
             android:layout_width="wrap_content"
