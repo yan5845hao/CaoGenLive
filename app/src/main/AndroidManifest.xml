@@ -38,7 +38,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.EditUserInfoActivity" />
-        <activity android:name=".activity.SaveUserInfoActivity"></activity>
+        <activity android:name=".activity.SaveUserInfoActivity" />
+        <activity android:name=".activity.SupportRankListActivity"></activity>
     </application>
 
 </manifest>

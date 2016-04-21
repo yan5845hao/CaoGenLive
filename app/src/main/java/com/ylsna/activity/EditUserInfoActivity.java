@@ -61,6 +61,11 @@ public class EditUserInfoActivity extends AppCompatActivity implements View.OnCl
         rl_edit_user_info_introduce = (RelativeLayout) findViewById(R.id.rl_edit_user_info_introduce);
     }
 
+    /**
+     * 点击名字，房间号，个人简介时进行修改的跳转逻辑
+     *
+     * @param v
+     */
     @Override
     public void onClick(View v) {
         String title = null;
@@ -70,19 +75,16 @@ public class EditUserInfoActivity extends AppCompatActivity implements View.OnCl
                 break;
             case R.id.rl_edit_user_info_name:
                 title = "更改名字";
-                titleIntent.putExtra(Configs.EDIT_USER_INFO_TITLE, title);
-                startActivityForResult(titleIntent, 0);
+
                 break;
             case R.id.rl_edit_user_info_room:
                 title = "更改房间号";
-                titleIntent.putExtra(Configs.EDIT_USER_INFO_TITLE, title);
-                startActivityForResult(titleIntent, 0);
                 break;
             case R.id.rl_edit_user_info_introduce:
                 title = "更改个人简介";
-                titleIntent.putExtra(Configs.EDIT_USER_INFO_TITLE, title);
-                startActivityForResult(titleIntent, 0);
                 break;
         }
+        titleIntent.putExtra(Configs.EDIT_USER_INFO_TITLE, title);
+        startActivityForResult(titleIntent, 0);
     }
 }

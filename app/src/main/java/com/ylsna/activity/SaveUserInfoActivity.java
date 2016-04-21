@@ -110,7 +110,7 @@ public class SaveUserInfoActivity extends AppCompatActivity implements View.OnCl
     }
 
     /**
-     * 监听EditText是否输入
+     * 监听EditText是否输入，然后隐藏“保存”按钮
      *
      * @param s
      * @param start
@@ -123,9 +123,11 @@ public class SaveUserInfoActivity extends AppCompatActivity implements View.OnCl
 
     @Override
     public void onTextChanged(CharSequence s, int start, int before, int count) {
+        //如果输入的不为空，则显示
         if (!TextUtils.isEmpty(et_save_user_info.getText().toString().trim())) {
             tv_save_user_save.setVisibility(View.VISIBLE);
         } else {
+            //反之，则显示
             tv_save_user_save.setVisibility(View.GONE);
         }
     }
