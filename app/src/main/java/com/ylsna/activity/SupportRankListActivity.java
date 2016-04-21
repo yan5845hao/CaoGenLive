@@ -10,6 +10,10 @@ public class SupportRankListActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_support_rank_list);
+        setContentView(R.layout.header_lv_support_rank_list);
+        if (getSupportActionBar() != null) {
+            //隐藏ActionBar
+            getSupportActionBar().hide();
+        }
     }
 }

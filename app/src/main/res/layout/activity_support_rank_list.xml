@@ -8,33 +8,59 @@
     <RadioGroup
         android:id="@+id/rg_support_rank_list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="44dp"
         android:orientation="horizontal"
         android:weightSum="4">
 
         <RadioButton
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/day_rank_list" />
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/day_rank_list"
+            android:textColor="@color/colorTextPrimary" />
 
         <RadioButton
             android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
             android:text="@string/week_rank_list"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:textColor="@color/colorTextPrimary" />
 
         <RadioButton
             android:layout_width="0dp"
-            android:text="@string/month_rank_list"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <RadioButton
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/all_rank_list" />
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/month_rank_list"
+            android:textColor="@color/colorTextPrimary" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/all_rank_list"
+            android:textColor="@color/colorTextPrimary" />
     </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/ll_support_rank_list"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/rg_support_rank_list"
+        android:background="@color/colorLine"
+        android:orientation="horizontal" />
+
+    <ListView
+        android:id="@+id/lv_support_rank_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_support_rank_list" />
 
 </RelativeLayout>

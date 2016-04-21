@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <com.ylsna.view.CircleImageView
+        android:id="@+id/im_support_rank_list_no1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="46dp"
+        android:src="@mipmap/head" />
+
+    <com.ylsna.view.CircleImageView
+        android:id="@+id/im_support_rank_list_no2"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="46dp"
+        android:layout_toLeftOf="@+id/im_support_rank_list_no1"
+        android:src="@mipmap/head" />
+
+    <com.ylsna.view.CircleImageView
+        android:id="@+id/im_support_rank_list_no3"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="46dp"
+        android:layout_toRightOf="@+id/im_support_rank_list_no1"
+        android:src="@mipmap/head" />
+
+    <TextView
+        android:id="@+id/tv_support_rank_list_username_no1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/im_support_rank_list_no1"
+        android:singleLine="true"
+        android:textColor="@color/colorTextPrimary"
+
+        />
+
+</RelativeLayout>
