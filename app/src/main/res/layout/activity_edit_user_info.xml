@@ -55,7 +55,7 @@
             android:layout_height="60dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="50dp"
+            android:layout_marginRight="35dp"
             android:src="@mipmap/head" />
 
         <ImageView
@@ -63,6 +63,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
+            android:layout_marginRight="11dp"
             android:background="@mipmap/nav_icon_arrow_default" />
 
         <LinearLayout
@@ -107,6 +108,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
+            android:layout_marginRight="11dp"
             android:background="@mipmap/nav_icon_arrow_default" />
 
         <LinearLayout
@@ -152,6 +154,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
+
+            android:layout_marginRight="11dp"
             android:background="@mipmap/nav_icon_arrow_default" />
 
         <LinearLayout
@@ -198,6 +202,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
+            android:layout_marginRight="11dp"
+
             android:background="@mipmap/nav_icon_arrow_default" />
 
         <LinearLayout
@@ -231,7 +237,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="45dp"
+            android:layout_marginRight="18dp"
             android:ellipsize="end"
             android:maxEms="6"
             android:singleLine="true"
@@ -283,6 +289,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
+            android:layout_marginRight="11dp"
+
             android:background="@mipmap/nav_icon_arrow_default" />
 
         <LinearLayout
