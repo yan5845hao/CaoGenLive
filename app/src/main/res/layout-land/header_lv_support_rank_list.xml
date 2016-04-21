@@ -5,8 +5,8 @@
     <!--第一名头像-->
     <com.ylsna.view.CircleImageView
         android:id="@+id/im_support_rank_list_no1"
-        android:layout_width="74dp"
-        android:layout_height="74dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="48dp"
         android:layout_marginRight="48dp"
@@ -24,24 +24,12 @@
         android:src="@mipmap/def_icon_champion_default" />
 
     <ImageView
-        android:id="@+id/im_round_champion"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="42.5dp"
-        android:layout_marginRight="42.5dp"
         android:layout_marginTop="43.5dp"
         android:src="@mipmap/bg_bg_big_round_disabled"
         android:translationZ="-1dp" />
-
-    <ImageView
-        android:layout_width="42dp"
-        android:layout_height="39dp"
-        android:layout_alignEnd="@+id/im_round_champion"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="22dp"
-        android:src="@mipmap/def_icon_crown_default"
-        android:translationZ="-2dp" />
     <!--第二名头像-->
     <com.ylsna.view.CircleImageView
         android:id="@+id/im_support_rank_list_no2"
@@ -50,14 +38,6 @@
         android:layout_marginTop="46dp"
         android:layout_toLeftOf="@+id/im_support_rank_list_no1"
         android:src="@mipmap/head" />
-
-    <ImageView
-        android:layout_width="65dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="45.5dp"
-        android:layout_toRightOf="@+id/im_round_champion"
-        android:src="@mipmap/bg_bg_small_round_disabled"
-        android:translationZ="-1dp" />
 
     <ImageView
         android:layout_width="70dp"
@@ -74,14 +54,6 @@
         android:layout_marginTop="46dp"
         android:layout_toRightOf="@+id/im_support_rank_list_no1"
         android:src="@mipmap/head" />
-
-    <ImageView
-        android:layout_width="65dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="45.5dp"
-        android:layout_toLeftOf="@+id/im_round_champion"
-        android:src="@mipmap/bg_bg_small_round_disabled"
-        android:translationZ="-1dp" />
 
     <ImageView
         android:layout_width="70dp"
@@ -136,7 +108,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="68dp"
         android:layout_marginRight="68dp"
-        android:layout_marginTop="6dp">
+        android:layout_marginTop="10dp">
 
         <TextView
             android:id="@+id/tv_support"
@@ -167,7 +139,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_support_rank_list_username_no2"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="10dp"
         android:layout_toLeftOf="@+id/rl_support_rank_list_money_no1">
 
         <TextView
@@ -199,7 +171,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_support_rank_list_username_no2"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="10dp"
         android:layout_toRightOf="@+id/rl_support_rank_list_money_no1">
 
         <TextView
