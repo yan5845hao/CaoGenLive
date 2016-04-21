@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.ylsna.activity.SupportRankListActivity">
-
+    <!--titlebar-->
     <RelativeLayout
         android:id="@+id/rl_support_rank_list_title_bar"
         android:layout_width="match_parent"
@@ -36,8 +36,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:button="@null"
-            android:gravity="center"
             android:drawableBottom="@drawable/radio_button_rank_selector"
+            android:gravity="center"
             android:text="@string/day_rank_list"
             android:textColor="@color/colorTextPrimary" />
 
@@ -45,8 +45,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:drawableBottom="@drawable/radio_button_rank_selector"
             android:button="@null"
+            android:drawableBottom="@drawable/radio_button_rank_selector"
             android:gravity="center"
             android:text="@string/week_rank_list"
             android:textColor="@color/colorTextPrimary" />
@@ -84,7 +84,7 @@
         android:id="@+id/lv_support_rank_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listheader="@layout/header_lv_support_rank_list"
-        android:layout_below="@+id/ll_support_rank_list" />
+        android:layout_below="@+id/ll_support_rank_list"
+        tools:listheader="@layout/header_lv_support_rank_list" />
 
 </RelativeLayout>

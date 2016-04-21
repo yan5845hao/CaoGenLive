@@ -11,5 +11,9 @@ public class IncomeRankListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_income_rank_list);
+        if (getSupportActionBar() != null) {
+            //隐藏ActionBar
+            getSupportActionBar().hide();
+        }
     }
 }

@@ -13,6 +13,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import com.ylsna.R;
+import com.ylsna.activity.IncomeRankListActivity;
 import com.ylsna.activity.SupportRankListActivity;
 import com.ylsna.adapter.InnerFragmentViewPagerAdapter;
 import com.ylsna.innerfragment.FocusFragment;
@@ -84,7 +85,7 @@ public class ListFragment extends Fragment {
         btn_income_rank_list.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent(getActivity(), IncomeRankListActivity.class));
             }
         });
     }
