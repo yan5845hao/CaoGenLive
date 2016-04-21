@@ -8,7 +8,7 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
@@ -51,8 +51,8 @@ public class ListFragment extends Fragment {
     /**
      * 点击赞助榜和收入榜的按钮
      */
-    private Button btn_support_rank_list;
-    private Button btn_income_rank_list;
+    private ImageButton imb_support_rank_list;
+    private ImageButton imb_income_rank_list;
 
 
     @Nullable
@@ -72,17 +72,17 @@ public class ListFragment extends Fragment {
      * @param view
      */
     private void initView(View view) {
-        btn_support_rank_list = (Button) view.findViewById(R.id.btn_support_rank_list);
-        btn_income_rank_list = (Button) view.findViewById(R.id.btn_income_rank_list);
+        imb_support_rank_list = (ImageButton) view.findViewById(R.id.imb_support_rank_list);
+        imb_income_rank_list = (ImageButton) view.findViewById(R.id.imb_income_rank_list);
         //进入赞助榜单
-        btn_support_rank_list.setOnClickListener(new View.OnClickListener() {
+        imb_support_rank_list.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getActivity(), SupportRankListActivity.class));
             }
         });
         //进入收入榜
-        btn_income_rank_list.setOnClickListener(new View.OnClickListener() {
+        imb_income_rank_list.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getActivity(), IncomeRankListActivity.class));
