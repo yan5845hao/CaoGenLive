@@ -51,11 +51,33 @@
             android:textColor="@android:color/white" />
     </RadioGroup>
 
+    <LinearLayout
+        android:id="@+id/ll_rank_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rg_list"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_support_rank_list"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_income_rank_list"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
     <android.support.v4.view.ViewPager
         android:id="@+id/vp_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/rg_list" />
+        android:layout_below="@+id/ll_rank_list" />
 
 
 </RelativeLayout>
