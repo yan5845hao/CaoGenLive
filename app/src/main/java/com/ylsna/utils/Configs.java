@@ -1,4 +1,4 @@
-package com.ylsna;
+package com.ylsna.utils;
 
 /**
  * Created by halsey on 16-4-20.

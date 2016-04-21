@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 
-import com.ylsna.Configs;
+import com.ylsna.utils.Configs;
 import com.ylsna.R;
 
 public class EditUserInfoActivity extends AppCompatActivity implements View.OnClickListener {

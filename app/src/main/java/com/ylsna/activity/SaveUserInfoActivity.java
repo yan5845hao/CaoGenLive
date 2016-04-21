@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.ylsna.Configs;
+import com.ylsna.utils.Configs;
 import com.ylsna.R;
 
 public class SaveUserInfoActivity extends AppCompatActivity implements View.OnClickListener, TextWatcher {
