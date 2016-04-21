@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 
 import com.ylsna.Configs;
@@ -26,6 +27,10 @@ public class EditUserInfoActivity extends AppCompatActivity implements View.OnCl
      * 修改个人简介
      */
     private RelativeLayout rl_edit_user_info_introduce;
+    /**
+     * 返回
+     */
+    private ImageButton im_toolbar_back;
 
 
     @Override
@@ -49,6 +54,7 @@ public class EditUserInfoActivity extends AppCompatActivity implements View.OnCl
         rl_edit_user_info_name.setOnClickListener(this);
         rl_edit_user_info_room.setOnClickListener(this);
         rl_edit_user_info_introduce.setOnClickListener(this);
+        im_toolbar_back.setOnClickListener(this);
     }
 
     /**
@@ -59,6 +65,8 @@ public class EditUserInfoActivity extends AppCompatActivity implements View.OnCl
         rl_edit_user_info_name = (RelativeLayout) findViewById(R.id.rl_edit_user_info_name);
         rl_edit_user_info_room = (RelativeLayout) findViewById(R.id.rl_edit_user_info_room);
         rl_edit_user_info_introduce = (RelativeLayout) findViewById(R.id.rl_edit_user_info_introduce);
+
+        im_toolbar_back = (ImageButton) findViewById(R.id.imb_edit_user_info_toolbar_back);
     }
 
     /**
@@ -72,19 +80,26 @@ public class EditUserInfoActivity extends AppCompatActivity implements View.OnCl
         Intent titleIntent = new Intent(EditUserInfoActivity.this, SaveUserInfoActivity.class);
         switch (v.getId()) {
             case R.id.rl_edit_user_info_head:
+
                 break;
             case R.id.rl_edit_user_info_name:
                 title = "更改名字";
-
+                titleIntent.putExtra(Configs.EDIT_USER_INFO_TITLE, title);
+                startActivityForResult(titleIntent, 0);
                 break;
             case R.id.rl_edit_user_info_room:
                 title = "更改房间号";
+                titleIntent.putExtra(Configs.EDIT_USER_INFO_TITLE, title);
+                startActivityForResult(titleIntent, 0);
                 break;
             case R.id.rl_edit_user_info_introduce:
                 title = "更改个人简介";
+                titleIntent.putExtra(Configs.EDIT_USER_INFO_TITLE, title);
+                startActivityForResult(titleIntent, 0);
+                break;
+            case R.id.imb_edit_user_info_toolbar_back:
+                finish();
                 break;
         }
-        titleIntent.putExtra(Configs.EDIT_USER_INFO_TITLE, title);
-        startActivityForResult(titleIntent, 0);
     }
 }

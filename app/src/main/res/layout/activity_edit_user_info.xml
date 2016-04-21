@@ -23,13 +23,13 @@
             android:textColor="@android:color/white"
             android:textSize="18sp" />
 
-        <!--<ImageButton-->
-        <!--android:id="@+id/btn_toolbar_chat"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_centerVertical="true"-->
-        <!--android:layout_marginLeft="4dp"-->
-        <!--android:background="@mipmap/nav_icon_arrow_default" />-->
+        <ImageButton
+            android:id="@+id/imb_edit_user_info_toolbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:background="@mipmap/nav_icon_return_default" />
     </RelativeLayout>
 
     <!--“头像修改”的条目按钮-->

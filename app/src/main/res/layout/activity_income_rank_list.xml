@@ -21,6 +21,14 @@
             android:text="@string/income_rank_list"
             android:textColor="@android:color/white"
             android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/imb_income_rank_list_toolbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:background="@mipmap/nav_icon_return_default" />
     </RelativeLayout>
 
     <RadioGroup
