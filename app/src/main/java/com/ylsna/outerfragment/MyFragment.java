@@ -91,6 +91,7 @@ public class MyFragment extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         //告诉关注和粉丝页面到底该显示哪一个页面的intent，0：关注；1：粉丝
         Intent itemIntent = new Intent(getActivity(), FocusFansActivity.class);
+
         switch (v.getId()) {
             //编辑用户资料点击事件
             case R.id.rl_my_title:

@@ -18,7 +18,7 @@ public class IncomeRecordActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_income_record);
-        StatusBarUtil.setColor(this, getResources().getColor(R.color.colorOrangeDarker),10);
+        StatusBarUtil.setColor(this, getResources().getColor(R.color.colorOrangeDarker), 0);
         if (getSupportActionBar() != null) {
             //隐藏ActionBar
             getSupportActionBar().hide();
