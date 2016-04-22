@@ -171,7 +171,7 @@
         android:background="@android:color/white">
         <!--培育种子（买种子）按钮-->
         <ImageButton
-            android:id="@+id/imb_income_record_buy_seed"
+            android:id="@+id/imb_income_record_withdraw_cash"
             android:layout_width="match_parent"
             android:layout_height="44dp"
             android:background="@drawable/rl_press_selector" />
@@ -180,7 +180,7 @@
             android:id="@+id/imb_income_record_withdraw_cash"
             android:layout_width="match_parent"
             android:layout_height="44dp"
-            android:layout_below="@+id/imb_income_record_buy_seed"
+            android:layout_below="@+id/imb_income_record_withdraw_cash"
             android:background="@drawable/rl_press_selector" />
 
         <LinearLayout

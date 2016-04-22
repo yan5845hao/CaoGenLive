@@ -11,6 +11,7 @@ import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 
 import com.ylsna.R;
+import com.ylsna.activity.BuySeedActivity;
 import com.ylsna.activity.EditUserInfoActivity;
 import com.ylsna.activity.IncomeRecordActivity;
 
@@ -25,6 +26,10 @@ public class MyFragment extends Fragment implements View.OnClickListener {
     private RelativeLayout rl_my_title;
     /**
      * “收入记录”条目
+     */
+    private ImageButton imb_income_record_withdraw_cash;
+    /**
+     * “购买种子”条目
      */
     private ImageButton imb_income_record_buy_seed;
 
@@ -43,6 +48,8 @@ public class MyFragment extends Fragment implements View.OnClickListener {
      */
     private void setListeners() {
         rl_my_title.setOnClickListener(this);
+
+        imb_income_record_withdraw_cash.setOnClickListener(this);
         imb_income_record_buy_seed.setOnClickListener(this);
     }
 
@@ -53,6 +60,8 @@ public class MyFragment extends Fragment implements View.OnClickListener {
      */
     private void initView(View view) {
         rl_my_title = (RelativeLayout) view.findViewById(R.id.rl_my_title);
+
+        imb_income_record_withdraw_cash = (ImageButton) view.findViewById(R.id.imb_income_record_withdraw_cash);
         imb_income_record_buy_seed = (ImageButton) view.findViewById(R.id.imb_income_record_buy_seed);
     }
 
@@ -69,8 +78,12 @@ public class MyFragment extends Fragment implements View.OnClickListener {
                 startActivity(new Intent(getActivity(), EditUserInfoActivity.class));
                 break;
             //“收入记录”条目点击
-            case R.id.imb_income_record_buy_seed:
+            case R.id.imb_income_record_withdraw_cash:
                 startActivity(new Intent(getActivity(), IncomeRecordActivity.class));
+                break;
+            //“购买种子”条目点击
+            case R.id.imb_income_record_buy_seed:
+                startActivity(new Intent(getActivity(), BuySeedActivity.class));
                 break;
         }
     }
