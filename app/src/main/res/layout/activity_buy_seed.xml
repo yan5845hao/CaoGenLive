@@ -48,7 +48,7 @@
     <RelativeLayout
         android:id="@+id/rl_income_record"
         android:layout_width="match_parent"
-        android:layout_height="264dp"
+        android:layout_height="268dp"
         android:layout_below="@+id/rl_buy_seed_title"
         android:layout_marginTop="10dp"
         android:background="@android:color/white">

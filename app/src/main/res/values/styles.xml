@@ -13,7 +13,7 @@
         <!-- 按钮的颜色 -->
         <item name="colorAccent">@color/colorOrange</item>
         <!-- 文字的颜色 -->
-        <item name="android:textColorPrimary">@color/colorTextLighter</item>
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
     </style>
 
 </resources>

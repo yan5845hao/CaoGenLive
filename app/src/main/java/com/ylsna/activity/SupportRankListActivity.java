@@ -30,7 +30,7 @@ public class SupportRankListActivity extends AppCompatActivity {
      * 初始化控件
      */
     private void initView() {
-        imb_support_rank_list_toolbar_back = (ImageButton) findViewById(R.id.imb_income_rank_list_toolbar_back);
+        imb_support_rank_list_toolbar_back = (ImageButton) findViewById(R.id.imb_support_rank_list_toolbar_back);
     }
 
     /**
