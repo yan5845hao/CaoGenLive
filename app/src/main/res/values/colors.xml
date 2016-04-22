@@ -9,8 +9,8 @@
     <color name="colorTextLighter">#A5B1B8</color>
     <color name="colorLine">#E1E7E8</color>
     <color name="colorPress">#D8DEDE</color>
-    <color name="colorOrange">#E17850</color>
-    <color name="colorOrangeDarker">#C94E28</color>
+    <color name="colorOrange">#D36136</color>
+    <color name="colorOrangeDarker">#ED6135</color>
     <color name="colorGreen">#9CCC65</color>
     <color name="colorGreenDarker">#86BA4A</color>
 </resources>

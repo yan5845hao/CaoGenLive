@@ -42,7 +42,8 @@
         <activity android:name=".activity.SupportRankListActivity" />
         <activity android:name=".activity.IncomeRankListActivity" />
         <activity android:name=".activity.IncomeRecordActivity" />
-        <activity android:name=".activity.BuySeedActivity"></activity>
+        <activity android:name=".activity.BuySeedActivity" />
+        <activity android:name=".activity.FocusFansActivity"></activity>
     </application>
 
 </manifest>

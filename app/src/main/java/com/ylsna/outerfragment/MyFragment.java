@@ -13,7 +13,9 @@ import android.widget.RelativeLayout;
 import com.ylsna.R;
 import com.ylsna.activity.BuySeedActivity;
 import com.ylsna.activity.EditUserInfoActivity;
+import com.ylsna.activity.FocusFansActivity;
 import com.ylsna.activity.IncomeRecordActivity;
+import com.ylsna.utils.Configs;
 
 
 /**
@@ -32,6 +34,14 @@ public class MyFragment extends Fragment implements View.OnClickListener {
      * “购买种子”条目
      */
     private ImageButton imb_income_record_buy_seed;
+    /**
+     * “关注”条目
+     */
+    private ImageButton btn_my_focus_num;
+    /**
+     * “粉丝”条目
+     */
+    private ImageButton btn_my_fans_num;
 
     @Nullable
     @Override
@@ -49,6 +59,9 @@ public class MyFragment extends Fragment implements View.OnClickListener {
     private void setListeners() {
         rl_my_title.setOnClickListener(this);
 
+        btn_my_focus_num.setOnClickListener(this);
+        btn_my_fans_num.setOnClickListener(this);
+
         imb_income_record_withdraw_cash.setOnClickListener(this);
         imb_income_record_buy_seed.setOnClickListener(this);
     }
@@ -61,6 +74,10 @@ public class MyFragment extends Fragment implements View.OnClickListener {
     private void initView(View view) {
         rl_my_title = (RelativeLayout) view.findViewById(R.id.rl_my_title);
 
+        btn_my_focus_num = (ImageButton) view.findViewById(R.id.btn_my_focus_num);
+        btn_my_fans_num = (ImageButton) view.findViewById(R.id.btn_my_fans_num);
+
+
         imb_income_record_withdraw_cash = (ImageButton) view.findViewById(R.id.imb_income_record_withdraw_cash);
         imb_income_record_buy_seed = (ImageButton) view.findViewById(R.id.imb_income_record_buy_seed);
     }
@@ -72,6 +89,8 @@ public class MyFragment extends Fragment implements View.OnClickListener {
      */
     @Override
     public void onClick(View v) {
+        //告诉关注和粉丝页面到底该显示哪一个页面的intent，0：关注；1：粉丝
+        Intent itemIntent = new Intent(getActivity(), FocusFansActivity.class);
         switch (v.getId()) {
             //编辑用户资料点击事件
             case R.id.rl_my_title:
@@ -84,6 +103,16 @@ public class MyFragment extends Fragment implements View.OnClickListener {
             //“购买种子”条目点击
             case R.id.imb_income_record_buy_seed:
                 startActivity(new Intent(getActivity(), BuySeedActivity.class));
+                break;
+            //“关注”条目点击
+            case R.id.btn_my_focus_num:
+                itemIntent.putExtra(Configs.SET_ITEM_TO_WITCH, 0);
+                startActivity(itemIntent);
+                break;
+            //“粉丝”条目点击
+            case R.id.btn_my_fans_num:
+                itemIntent.putExtra(Configs.SET_ITEM_TO_WITCH, 1);
+                startActivity(itemIntent);
                 break;
         }
     }

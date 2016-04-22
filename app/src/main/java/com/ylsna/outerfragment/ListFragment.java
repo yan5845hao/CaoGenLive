@@ -16,9 +16,9 @@ import com.ylsna.R;
 import com.ylsna.activity.IncomeRankListActivity;
 import com.ylsna.activity.SupportRankListActivity;
 import com.ylsna.adapter.InnerFragmentViewPagerAdapter;
-import com.ylsna.innerfragment.FocusFragment;
-import com.ylsna.innerfragment.HotFragment;
-import com.ylsna.innerfragment.RecentFragment;
+import com.ylsna.annolistfragment.FocusFragment;
+import com.ylsna.annolistfragment.HotFragment;
+import com.ylsna.annolistfragment.RecentFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -115,6 +115,7 @@ public class ListFragment extends Fragment {
 
         InnerFragmentViewPagerAdapter viewPagerAdapter = new InnerFragmentViewPagerAdapter(getChildFragmentManager(), fragments);
         mVpList.setAdapter(viewPagerAdapter);
+
         //默认显示热门页面
         rb_hot.setChecked(true);
         mVpList.setCurrentItem(1);

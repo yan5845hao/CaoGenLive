@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.FocusFansActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/relativeLayout">
+
+        <ImageButton
+            android:id="@+id/btn_toolbar_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:background="@mipmap/nav_icon_return_default" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_focus_and_fans"
+        android:layout_width="160dp"
+        android:layout_height="49dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RadioButton
+            android:id="@+id/rb_focus_fans_focus"
+            android:layout_width="0dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="@drawable/radio_button_inner_selector"
+            android:gravity="center"
+            android:text="关注"
+            android:textColor="@android:color/white" />
+
+        <RadioButton
+            android:id="@+id/rb_focus_fans_fans"
+            android:layout_width="0dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="@drawable/radio_button_inner_selector"
+            android:gravity="center"
+            android:text="粉丝"
+            android:textColor="@android:color/white" />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_focus_fans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout" />
+</RelativeLayout>

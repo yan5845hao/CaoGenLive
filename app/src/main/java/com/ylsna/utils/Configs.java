@@ -12,4 +12,8 @@ public class Configs {
      * 用户修改完信息，返回到上一个界面，用户信息显示的信息的确认字符串
      */
     public static final String CONFIRM_USER_INFO_BACK = "confirm_user_info_back";
+    /**
+     * 判断用户点击的是哪一个按钮，通知给FocusFansActivity显示哪一个
+     */
+    public static final String SET_ITEM_TO_WITCH = "set_item_to_witch";
 }

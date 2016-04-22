@@ -13,9 +13,9 @@ import android.widget.RadioGroup;
 
 import com.ylsna.R;
 import com.ylsna.adapter.InnerFragmentViewPagerAdapter;
-import com.ylsna.innerfragment.LiveConventionFragment;
-import com.ylsna.innerfragment.NoticeFragment;
-import com.ylsna.innerfragment.RewardFragment;
+import com.ylsna.annolistfragment.LiveConventionFragment;
+import com.ylsna.annolistfragment.NoticeFragment;
+import com.ylsna.annolistfragment.RewardFragment;
 
 import java.util.ArrayList;
 import java.util.List;
