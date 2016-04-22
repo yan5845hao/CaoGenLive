@@ -8,13 +8,13 @@
 
     <!--顶部黄色区域-->
     <RelativeLayout
-        android:id="@+id/rl_income_record_title"
+        android:id="@+id/rl_buy_seed_title"
         android:layout_width="match_parent"
         android:layout_height="210dp"
-        android:background="@android:color/holo_orange_dark">
+        android:background="@color/colorOrange">
         <!--返回按钮-->
         <ImageButton
-            android:id="@+id/im_income_record_back"
+            android:id="@+id/imb_income_record_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="4dp"
@@ -24,7 +24,7 @@
             android:id="@+id/btn_toolbar_search"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/im_income_record_back"
+            android:layout_alignBottom="@+id/imb_income_record_back"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
             android:layout_marginRight="4dp"
@@ -44,7 +44,7 @@
 
         <!--收入数字显示-->
         <TextView
-            android:id="@+id/tv_income_record_num"
+            android:id="@+id/tv_buy_seed_num"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView"
@@ -60,7 +60,7 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tv_income_record_num"
+            android:layout_below="@+id/tv_buy_seed_num"
             android:layout_centerHorizontal="true">
 
             <TextView
@@ -91,7 +91,7 @@
         android:id="@+id/rl_income_record"
         android:layout_width="match_parent"
         android:layout_height="88dp"
-        android:layout_below="@+id/rl_income_record_title"
+        android:layout_below="@+id/rl_buy_seed_title"
         android:layout_marginTop="10dp"
         android:background="@android:color/white">
 
@@ -107,7 +107,7 @@
             android:id="@+id/tv_get"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="11dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="12dp"
             android:text="@string/today_income"
             android:textColor="@color/colorTextPrimary"
@@ -136,7 +136,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="12dp"
-            android:layout_marginLeft="11dp"
+            android:layout_marginLeft="20dp"
             android:text="@string/yesterday_income"
             android:textColor="@color/colorTextPrimary"
             android:textSize="15sp" />
@@ -195,7 +195,7 @@
             android:id="@+id/tv_income_record_buy_seed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="11dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="12dp"
             android:text="@string/buy_seed"
             android:textColor="@color/colorTextPrimary"
@@ -223,7 +223,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="12dp"
-            android:layout_marginLeft="11dp"
+            android:layout_marginLeft="20dp"
             android:text="@string/withdraw_cash"
             android:textColor="@color/colorTextPrimary"
             android:textSize="15sp" />

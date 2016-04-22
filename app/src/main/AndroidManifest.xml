@@ -41,7 +41,8 @@
         <activity android:name=".activity.SaveUserInfoActivity" />
         <activity android:name=".activity.SupportRankListActivity" />
         <activity android:name=".activity.IncomeRankListActivity" />
-        <activity android:name=".activity.IncomeRecordActivity"></activity>
+        <activity android:name=".activity.IncomeRecordActivity" />
+        <activity android:name=".activity.BuySeedActivity"></activity>
     </application>
 
 </manifest>

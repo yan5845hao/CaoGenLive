@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ylsna.activity.BuySeedActivity">
+    <!--顶部绿色区域-->
+    <RelativeLayout
+        android:id="@+id/rl_buy_seed_title"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@color/colorGreen">
+        <!--返回按钮-->
+        <ImageButton
+            android:id="@+id/imb_income_record_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:background="@mipmap/nav_icon_return_default" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="可用种子"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <!--种子数量显示-->
+        <TextView
+            android:id="@+id/tv_buy_seed_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <!--今日收入和昨日收入-->
+    <RelativeLayout
+        android:id="@+id/rl_income_record"
+        android:layout_width="match_parent"
+        android:layout_height="264dp"
+        android:layout_below="@+id/rl_buy_seed_title"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white">
+        <!--顶部的线条-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorLine"
+            android:orientation="horizontal" />
+
+        <ImageButton
+            android:id="@+id/imb_buy_seed_46"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/rl_press_selector" />
+
+        <ImageButton
+            android:id="@+id/imb_buy_seed_470"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/imb_buy_seed_46"
+            android:background="@drawable/rl_press_selector" />
+
+        <ImageButton
+            android:id="@+id/imb_buy_seed_945"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/imb_buy_seed_470"
+            android:background="@drawable/rl_press_selector" />
+
+        <ImageButton
+            android:id="@+id/imb_buy_seed_1900"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/imb_buy_seed_945"
+            android:background="@drawable/rl_press_selector" />
+
+        <ImageButton
+            android:id="@+id/imb_buy_seed_4770"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/imb_buy_seed_1900"
+            android:background="@drawable/rl_press_selector" />
+
+        <ImageButton
+            android:id="@+id/imb_buy_seed_9600"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/imb_buy_seed_4770"
+            android:background="@drawable/rl_press_selector" />
+        <!--第一档次：46个种子，5块钱-->
+        <TextView
+            android:id="@+id/tv_seed_word_1"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="@string/seed"
+            android:textColor="@color/colorGreen"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_seed_num_1"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_toRightOf="@+id/tv_seed_word_1"
+            android:gravity="center"
+            android:text="@string/seed_num_46"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_seed_num_rmb_5"
+            android:layout_width="22dp"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="@string/seed_rmb_5" />
+
+        <LinearLayout
+            android:id="@+id/ll_buy_seed_line_1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tv_seed_word_1"
+            android:layout_marginLeft="20dp"
+            android:background="@color/colorLine"
+            android:orientation="horizontal" />
+        <!--第二档次：470个种子，50块钱-->
+        <TextView
+            android:id="@+id/tv_seed_word_2"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_below="@+id/ll_buy_seed_line_1"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="@string/seed"
+            android:textColor="@color/colorGreen"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_seed_num_2"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_below="@+id/ll_buy_seed_line_1"
+            android:layout_toRightOf="@+id/tv_seed_word_2"
+            android:gravity="center"
+            android:text="@string/seed_num_470"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_seed_num_rmb_50"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ll_buy_seed_line_1"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="@string/seed_rmb_50" />
+
+        <LinearLayout
+            android:id="@+id/ll_buy_seed_line_2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tv_seed_word_2"
+            android:layout_marginLeft="20dp"
+            android:background="@color/colorLine"
+            android:orientation="horizontal" />
+        <!--第二三档次：945个种子，100块钱-->
+        <TextView
+            android:id="@+id/tv_seed_word_3"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_below="@+id/ll_buy_seed_line_2"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="@string/seed"
+            android:textColor="@color/colorGreen"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_seed_num_3"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_below="@+id/ll_buy_seed_line_2"
+            android:layout_toRightOf="@+id/tv_seed_word_3"
+            android:gravity="center"
+            android:text="@string/seed_num_945"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_seed_num_rmb_100"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ll_buy_seed_line_2"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="@string/seed_rmb_100" />
+
+        <LinearLayout
+            android:id="@+id/ll_buy_seed_line_3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tv_seed_word_3"
+            android:layout_marginLeft="20dp"
+            android:background="@color/colorLine"
+            android:orientation="horizontal" />
+        <!--第四档次：1900个种子，200块钱-->
+        <TextView
+            android:id="@+id/tv_seed_word_4"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_below="@+id/ll_buy_seed_line_3"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="@string/seed"
+            android:textColor="@color/colorGreen"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_seed_num_4"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_below="@+id/ll_buy_seed_line_3"
+            android:layout_toRightOf="@+id/tv_seed_word_4"
+            android:gravity="center"
+            android:text="@string/seed_num_1900"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_seed_num_rmb_200"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ll_buy_seed_line_3"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="@string/seed_rmb_200" />
+
+        <LinearLayout
+            android:id="@+id/ll_buy_seed_line_4"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tv_seed_word_4"
+            android:layout_marginLeft="20dp"
+            android:background="@color/colorLine"
+            android:orientation="horizontal" />
+        <!--第五档次：4770个种子，500块钱-->
+        <TextView
+            android:id="@+id/tv_seed_word_5"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_below="@+id/ll_buy_seed_line_4"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="@string/seed"
+            android:textColor="@color/colorGreen"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_seed_num_5"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_below="@+id/ll_buy_seed_line_4"
+            android:layout_toRightOf="@+id/tv_seed_word_5"
+            android:gravity="center"
+            android:text="@string/seed_num_4770"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_seed_num_rmb_500"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ll_buy_seed_line_4"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="@string/seed_rmb_500" />
+
+        <LinearLayout
+            android:id="@+id/ll_buy_seed_line_5"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tv_seed_word_5"
+            android:layout_marginLeft="20dp"
+            android:background="@color/colorLine"
+            android:orientation="horizontal" />
+        <!--第二档次：9600个种子，1000块钱-->
+        <TextView
+            android:id="@+id/tv_seed_word_6"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_below="@+id/ll_buy_seed_line_5"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="@string/seed"
+            android:textColor="@color/colorGreen"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_seed_num_6"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_below="@+id/ll_buy_seed_line_5"
+            android:layout_toRightOf="@+id/tv_seed_word_6"
+            android:gravity="center"
+            android:text="@string/seed_num_9600"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_seed_num_rmb_1000"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ll_buy_seed_line_5"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="@string/seed_rmb_1000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorLine"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+
+</RelativeLayout>

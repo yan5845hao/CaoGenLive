@@ -41,4 +41,22 @@
     <string name="yesterday_income">昨日收入</string>
     <string name="buy_seed">培育种子</string>
     <string name="withdraw_cash">提现</string>
+
+    <!--买种子相关-->
+    <string name="seed">种子</string>
+    <string name="seed_num_46">x46</string>
+    <string name="seed_num_470">x470</string>
+    <string name="seed_num_945">x945</string>
+    <string name="seed_num_1900">x1900</string>
+    <string name="seed_num_4770">x4770</string>
+    <string name="seed_num_9600">x9600</string>
+
+    <string name="seed_rmb_5">￥5</string>
+    <string name="seed_rmb_50">￥50</string>
+    <string name="seed_rmb_100">￥100</string>
+    <string name="seed_rmb_200">￥200</string>
+    <string name="seed_rmb_500">￥500</string>
+    <string name="seed_rmb_1000">￥1000</string>
+
+
 </resources>
