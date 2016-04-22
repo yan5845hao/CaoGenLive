@@ -39,8 +39,9 @@
         </activity>
         <activity android:name=".activity.EditUserInfoActivity" />
         <activity android:name=".activity.SaveUserInfoActivity" />
-        <activity android:name=".activity.SupportRankListActivity"></activity>
-        <activity android:name=".activity.IncomeRankListActivity"></activity>
+        <activity android:name=".activity.SupportRankListActivity" />
+        <activity android:name=".activity.IncomeRankListActivity" />
+        <activity android:name=".activity.IncomeRecordActivity"></activity>
     </application>
 
 </manifest>

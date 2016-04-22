@@ -36,4 +36,9 @@
     <string name="month_rank_list">月榜</string>
     <string name="all_rank_list">总榜</string>
 
+    <!--收入记录相关-->
+    <string name="today_income">今日收入</string>
+    <string name="yesterday_income">昨日收入</string>
+    <string name="buy_seed">培育种子</string>
+    <string name="withdraw_cash">提现</string>
 </resources>
